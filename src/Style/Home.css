@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=League+Gothic&family=Nosifer&family=Nunito+Sans&display=swap');
 
 .startSec{
-    min-height: 50vh;
+    min-height: 90vh;
+    width: 100%;
+    align-items: center;
     /* display: grid;
     place-items: center; */
 }
@@ -19,17 +21,64 @@
     background: transparent;
     color: wheat;
     /* margin-left: 12px; */
-    padding: 14px;
+    padding: 4px;
     width: 100%;
     font-size: 20px;
-    bottom: 0px 0px 0px 0px;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
 }
 
+.nextBtn{
+    align-items: center;
+    font-size: 32px;
+    background: transparent;
+    border: none;
+    color:  rgb(134, 239, 172);
+    text-align: center;
+}
+
+
+.startInput{
+    display: flex;
+    margin: 20px 0px;
+}
 .mainSec{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+.secImg{
+}
+.secImg img{
+    
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 100%;
 }
 
-.secImg img{
+.animatedH1 h1{
+    font-size: 40px;
+}
+.animatedText{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 870px) {
+  .mainSec{
+    flex-wrap: wrap;
+  }
 }
