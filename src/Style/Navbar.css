@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color:  rgb(134, 239, 172);
+}
+.logo img{
+    width: 40px;
+}
+

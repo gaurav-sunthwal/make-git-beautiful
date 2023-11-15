@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=League+Gothic&family=Nosifer&family=Nunito+Sans&display=swap');
+
+.startSec{
+    min-height: 50vh;
+    /* display: grid;
+    place-items: center; */
+}
+
+.secText{
+    padding: 20px;
+}
+.secText h1{
+    font-weight: 400;
+    font-size: 70px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.startInput input{
+    background: transparent;
+    color: wheat;
+    /* margin-left: 12px; */
+    padding: 14px;
+    width: 100%;
+    font-size: 20px;
+    bottom: 0px 0px 0px 0px;
+}
+
+.mainSec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secImg img{
+}
