@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 // img
 
 import codingImg from "../Img/codingImg.gif";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -13,17 +14,24 @@ function Home() {
           <div className="secText">
             <h1>Best Profile Generator</h1>
             <div className="startInput">
-              <input
-                className="usernameInput"
-                type="text"
-                placeholder="Enter Your GitHub Username"
-              />
-              <button className="btn nextBtn">
-                <FaArrowRight />
-              </button>
+              <form>
+                <input
+                  className="usernameInput"
+                  type="text"
+                  placeholder="Enter Your GitHub Username"
+                  required
+                />
+                <Link to={"/aboutMe"}>
+                  <button className="btn nextBtn">
+                    <FaArrowRight />
+                  </button>
+                </Link>
+              </form>
             </div>
             <div className="animatedH1">
-              <h1>Create <span className="animatedText">Modern</span> Profile</h1>
+              <h1>
+                Create <span className="animatedText">Modern</span> Profile
+              </h1>
             </div>
           </div>
           <div className="secImg">

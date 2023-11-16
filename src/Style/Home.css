@@ -39,7 +39,7 @@
 }
 
 
-.startInput{
+.startInput form{
     display: flex;
     margin: 20px 0px;
 }
