@@ -22,7 +22,7 @@ function Home() {
                   required
                 />
                 <Link to={"/aboutMe"}>
-                  <button className="btn nextBtn">
+                  <button className="btn nextBtnpage1">
                     <FaArrowRight />
                   </button>
                 </Link>
@@ -30,7 +30,7 @@ function Home() {
             </div>
             <div className="animatedH1">
               <h1>
-                Create <span className="animatedText">Modern</span> Profile
+                Create <span className="animatedText"></span> Profile
               </h1>
             </div>
           </div>

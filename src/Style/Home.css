@@ -43,6 +43,10 @@
     display: flex;
     margin: 20px 0px;
 }
+
+.usernameInput:focus{
+    border-bottom: 3px solid;
+}
 .mainSec{
     display: flex;
     align-items: center;
@@ -61,12 +65,37 @@
 
 .animatedH1 h1{
     font-size: 40px;
-}
-.animatedText{
-    color: #000;
+    color: rgb(113 113 122);
 }
 
 
+.animatedText::before {
+    color:  rgb(134, 239, 172);
+    content: "";
+    animation: textChanger 8s infinite linear;
+    transform: translateY(-20px);
+}
+
+
+@keyframes textChanger {
+    0%{
+        content: "Perfect";
+    }
+    25%{
+        content: "Interactive";
+        
+        text-decoration: dashed;
+    }
+    50%{
+        content: "Modern";
+        
+        text-decoration: double;
+    }
+    100%{
+        content: "Beautiful";
+        
+    }
+}
 
 
 
