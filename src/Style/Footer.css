@@ -1,0 +1,16 @@
+.socialMedia{
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+.socialMediaIcon{
+    padding: 6px;
+    margin: 2px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+}
+.socialMedia svg{
+    color: #000;
+}

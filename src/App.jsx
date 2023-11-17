@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Navbar from "./Pages/Navbar";
 import "./Style/Genural.css"
 import AboutMe from "./Pages/AboutMe";
+import Footer from "./Pages/Footer";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
           <Route path="/aboutMe" element={<AboutMe />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );
