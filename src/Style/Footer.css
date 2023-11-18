@@ -1,8 +1,10 @@
 .socialMedia{
-    display: block;
+    display: flex;
     margin: auto;
+    justify-content: center;
     text-align: center;
     align-items: center;
+    padding: 12px;
 }
 .socialMediaIcon{
     padding: 6px;
