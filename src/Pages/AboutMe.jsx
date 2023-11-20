@@ -34,7 +34,9 @@ function AboutMe() {
 ⚡ Fun fact"
             ></textarea>
             <div className="button">
-              <button className="nextBtn">Next</button>
+              <Link to={"/stats"}>
+                <button className="nextBtn">Next</button>
+              </Link>
             </div>
           </div>
         </div>
