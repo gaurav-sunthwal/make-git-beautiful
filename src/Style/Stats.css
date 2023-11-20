@@ -17,11 +17,13 @@
     padding: 12px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   text-align: center;
 }
 .someMoreOpsBtn{
     padding: 12px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .someMoreOpsBtn button{
