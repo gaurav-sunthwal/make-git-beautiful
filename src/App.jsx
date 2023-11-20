@@ -6,6 +6,7 @@ import "./Style/Genural.css"
 import AboutMe from "./Pages/AboutMe";
 import Footer from "./Pages/Footer";
 import Stats from "./Pages/Stats";
+import AddTechTags from "./Pages/AddTechTags";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutMe" element={<AboutMe />} />
           <Route path="/stats" element={<Stats/>} />
+          <Route path="/tags" element={<AddTechTags/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>

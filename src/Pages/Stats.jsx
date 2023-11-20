@@ -68,6 +68,15 @@ function Stats() {
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=gaurav-sunthwal&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
             alt=""
           />
+          <img
+            alt="gaurav-sunthwal's GitHub Stats"
+            src="https://awesome-github-stats.azurewebsites.net/user-stats/gaurav-sunthwal?cardType=github&theme=github-dark&showIcons=false&preferLogin=false"
+          />
+        </div>
+        <div className="nextBtns">
+          <Link to={"/tags"}>
+            <button className="nextBtn">Next</button>
+          </Link>
         </div>
       </section>
     </div>
