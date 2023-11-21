@@ -20,6 +20,7 @@ function Home() {
                   type="text"
                   placeholder="Enter Your GitHub Username"
                   required
+                  
                 />
                 <Link to={"/aboutMe"}>
                   <button className="btn nextBtnpage1">

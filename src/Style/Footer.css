@@ -1,18 +1,26 @@
 .socialMedia{
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 12px;
+ display: flex;
+ justify-content: center;
 }
 .socialMediaIcon{
-    padding: 6px;
-    margin: 2px;
-    align-items: center;
+    margin: 7px;
+    background: rgb(134, 239, 172);
+    padding: 9px;
+    font-size: 21px;
     border-radius: 50%;
-    background-color: blanchedalmond;
 }
 .socialMedia svg{
     color: #000;
+}
+
+.emailId{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.emailIcon{
+    padding: 0px 5px;
+    font-size: 20px;
 }

@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=League+Gothic&family=Nosifer&family=Nunito+Sans&display=swap');
 
+
+footer{
+    padding: 12px;
+}
 .startSec{
-    min-height: 90vh;
+    min-height: auto;
     width: 100%;
     align-items: center;
     /* display: grid;
@@ -97,7 +101,10 @@
     }
 }
 
-
+.lastText{
+    text-align: center;
+    align-items: center;
+}
 
 
 
