@@ -106,7 +106,10 @@ footer{
     align-items: center;
 }
 
-
+.button{
+    display: flex;
+    justify-content: center;
+}
 
 
 
