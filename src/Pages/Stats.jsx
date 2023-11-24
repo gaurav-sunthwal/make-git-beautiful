@@ -43,50 +43,59 @@ function Stats() {
   const img2 = `https://awesome-github-stats.azurewebsites.net/user-stats/gaurav-sunthwal?cardType=github&theme=${theme}&showIcons=false&preferLogin=false`;
   const img3 = `https://github-readme-stats.vercel.app/api/top-langs/?username=gaurav-sunthwal&theme=${theme}&hide_border=${border}&include_all_commits=true&count_private=true&layout=compact`;
   const img4 = `https://github-contributor-stats.vercel.app/api?username=gaurav-sunthwal&limit=5&theme=${theme}&combine_all_yearly_contributions=true`;
-  
+
   return (
     <div>
-      <div className="goBack">
+      <section className="stats">
+        <div className="goBack">
           <Link to={"/aboutMe"}>
             <IoCaretBackSharp />
             Go Back
           </Link>
         </div>
-      {/* ... rest of your component */}
-      <div className="themeOps">
-        <div className="bgColor">
-          <h3>Theme:</h3>
-          <select
-            name="bgColor"
-            id="bgColors"
-            onChange={handleThemeChange}
-            value={theme}
-          >
-            {themeOptions.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
+        {/* ... rest of your component */}
+      <div className="tital">
+          <h1>Flex your GitHub Stats</h1>
         </div>
-        <div className="someMoreOpsBtn">
-          <button className="opsManu" role="button" onClick={handleBorderClick}>
-            Border
-          </button>
+        <div className="themeOps">
+          <div className="bgColor">
+            <h3>Theme:</h3>
+            <select
+              name="bgColor"
+              id="bgColors"
+              onChange={handleThemeChange}
+              value={theme}
+            >
+              {themeOptions.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="someMoreOpsBtn">
+            <button
+              className="opsManu"
+              role="button"
+              onClick={handleBorderClick}
+            >
+              Border
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div className="statsImg">
-        <img src={img1} alt="" />
-        <img src={img2} alt="" />
-        <img src={img3} alt="" />
-        <img src={img4} alt="" />
-      </div>
-      <div className="button">
-        <Link to={"/tags"}>
-          <button className="nextBtn">Next</button>
-        </Link>
-      </div>
+        <div className="statsImg">
+          <img src={img1} alt="" />
+          <img src={img2} alt="" />
+          <img src={img3} alt="" />
+          <img src={img4} alt="" />
+        </div>
+        <div className="button">
+          <Link to={"/tags"}>
+            <button className="nextBtn">Next</button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }

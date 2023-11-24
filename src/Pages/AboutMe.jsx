@@ -24,8 +24,8 @@ function AboutMe() {
             <textarea
               name="aboutMe"
               id="aboutMe"
-              cols="40"
-              rows="12"
+              cols="50"
+              rows="10"
               placeholder="🔭 I’m currently working on
 👯 I’m looking to collaborate on
 🤝 I’m looking for help with
