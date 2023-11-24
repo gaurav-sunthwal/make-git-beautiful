@@ -16,11 +16,11 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
+        <Route path="*" element={<NotFound/>} />
           <Route path="/" element={<Home />} />
           <Route path="/aboutMe" element={<AboutMe />} />
           <Route path="/stats" element={<Stats/>} />
           <Route path="/tags" element={<AddTechTags/>} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer/>
       </Router>
