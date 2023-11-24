@@ -35,8 +35,19 @@ function AddTechTags() {
           <div className="imgSec">
             <img src={tags} alt="" />
           </div>
-          <div className="tags">
-            <h1>Add Tags</h1>
+          <div className="allTags">
+            <div className="topic">
+              <h1>Add Tags</h1>
+            </div>
+            <div className="mainTagSec">
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
+            </div>
           </div>
         </div>
       </section>
@@ -45,3 +56,19 @@ function AddTechTags() {
 }
 
 export default AddTechTags;
+
+function Tags(props) {
+  return (
+    <>
+      <div className="tag opsManu">
+        <div className="tagName  tagPart">
+          <p>{props.name}</p>
+        </div>
+        <div className="line tagPart">|</div>
+        <div className="add tagPart">
+          <p>+</p>
+        </div>
+      </div>
+    </>
+  );
+}

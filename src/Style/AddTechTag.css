@@ -12,7 +12,7 @@
 }
 .tagSearch {
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +81,45 @@
 
 .tagsSec{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
+   
+}
+
+.allTags h1{
+   text-align: center;
+}
+
+.tag{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: black;
+    padding: 0px;
+    align-items: center;
+    margin: 12px;
+}
+.mainTagSec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tag .opsManu{
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    min-height: 0rem;
+}
+
+
+.tagPart{
+    padding: 0px 12px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .tagsSec{
+    flex-wrap: wrap-reverse;
+  }
 }
