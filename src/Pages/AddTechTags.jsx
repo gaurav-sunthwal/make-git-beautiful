@@ -17,18 +17,16 @@ function AddTechTags() {
         <div className="tital">
           <h1>Add Tech that you use</h1>
           <div className="tagSearch">
-            <form className="d-flex" role="search">
-              <div className="search-box">
-                <button className="btn-search">
-                  <IoIosSearch />
-                </button>
-                <input
-                  type="text"
-                  className="input-search"
-                  placeholder="Type to Search..."
-                />
-              </div>
-            </form>
+            <div className="search-box">
+              <button className="btn-search">
+                <IoIosSearch />
+              </button>
+              <input
+                type="text"
+                className="input-search"
+                placeholder="Type to Search..."
+              />
+            </div>
           </div>
         </div>
 
@@ -41,69 +39,69 @@ function AddTechTags() {
               <h1>Add Tags</h1>
             </div>
             <div className="mainTagSec">
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
-              <Tags name = "C"/>
-              <Tags name = "C++"/>
-              <Tags name = "Python"/>
-              <Tags name = "React Js"/>
-              <Tags name = "Js"/>
-              <Tags name = "Java"/>
-              <Tags name = "C#"/>
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
+              <Tags name="C" />
+              <Tags name="C++" />
+              <Tags name="Python" />
+              <Tags name="React Js" />
+              <Tags name="Js" />
+              <Tags name="Java" />
+              <Tags name="C#" />
             </div>
           </div>
         </div>
@@ -115,12 +113,12 @@ function AddTechTags() {
 export default AddTechTags;
 
 function Tags(props) {
-  const [backgroundColor, setBackgroundColor] = useState('');
+  const [backgroundColor, setBackgroundColor] = useState("");
 
   // Event handler to change the background color on click
   const handleClick = () => {
-    const newColor = backgroundColor === '#e08080' ? 'white' : '#e08080';
-    
+    const newColor = backgroundColor === "#e08080" ? "white" : "#e08080";
+
     // Update the background color state
     setBackgroundColor(newColor);
   };
