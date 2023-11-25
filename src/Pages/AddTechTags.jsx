@@ -1,10 +1,32 @@
 import { Link } from "react-router-dom";
 import { IoCaretBackSharp } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
-import tags from "../Img/tags.png";
+import tagsPageImg from "../Img/tags.png";
 import "../Style/AddTechTag.css";
 import { useState } from "react";
 function AddTechTags() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [tags, setTags] = useState([
+    "C",
+    "C++",
+    "Python",
+    "React Js",
+    "JavaScript",
+    "Java",
+    "C#",
+    "C",
+    "PHP",
+    "Ruby",
+    "Swift",
+    "Kotlin",
+    "Go",
+    "Julia",
+  ]);
+
+  const filteredTags = tags.filter((tag) =>
+    tag.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div>
       <section className="tags">
@@ -25,6 +47,7 @@ function AddTechTags() {
                 type="text"
                 className="input-search"
                 placeholder="Type to Search..."
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
           </div>
@@ -32,76 +55,16 @@ function AddTechTags() {
 
         <div className="tagsSec">
           <div className="imgSec">
-            <img src={tags} alt="" />
+            <img src={tagsPageImg} alt="" />
           </div>
           <div className="allTags">
             <div className="topic">
               <h1>Add Tags</h1>
             </div>
             <div className="mainTagSec">
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
-              <Tags name="C" />
-              <Tags name="C++" />
-              <Tags name="Python" />
-              <Tags name="React Js" />
-              <Tags name="Js" />
-              <Tags name="Java" />
-              <Tags name="C#" />
+              {filteredTags.map((tagName, index) => (
+                <Tags key={index} name={tagName} />
+              ))}
             </div>
           </div>
         </div>
