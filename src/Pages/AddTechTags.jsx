@@ -3,6 +3,7 @@ import { IoCaretBackSharp } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import tags from "../Img/tags.png";
 import "../Style/AddTechTag.css";
+import { useState } from "react";
 function AddTechTags() {
   return (
     <div>
@@ -47,6 +48,62 @@ function AddTechTags() {
               <Tags name = "Js"/>
               <Tags name = "Java"/>
               <Tags name = "C#"/>
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
+              <Tags name = "C"/>
+              <Tags name = "C++"/>
+              <Tags name = "Python"/>
+              <Tags name = "React Js"/>
+              <Tags name = "Js"/>
+              <Tags name = "Java"/>
+              <Tags name = "C#"/>
             </div>
           </div>
         </div>
@@ -58,9 +115,18 @@ function AddTechTags() {
 export default AddTechTags;
 
 function Tags(props) {
+  const [backgroundColor, setBackgroundColor] = useState('');
+
+  // Event handler to change the background color on click
+  const handleClick = () => {
+    const newColor = backgroundColor === '#e08080' ? 'white' : '#e08080';
+    
+    // Update the background color state
+    setBackgroundColor(newColor);
+  };
   return (
     <>
-      <div className="tag opsManu">
+      <div className="tag opsManu" onClick={handleClick}>
         <div className="tagName  tagPart">
           <p>{props.name}</p>
         </div>

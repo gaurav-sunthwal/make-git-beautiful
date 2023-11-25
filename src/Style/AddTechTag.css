@@ -76,6 +76,11 @@
 
 .imgSec img{
     width: 100%;
+
+}
+
+.imgSec{
+    min-width: 30%;
 }
 
 
@@ -83,7 +88,8 @@
     display: flex;
     justify-content: space-around;
     text-align: center;
-   
+   align-items: center;
+   min-height: 100vh;
 }
 
 .allTags h1{
@@ -118,7 +124,7 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
   .tagsSec{
     flex-wrap: wrap-reverse;
   }
