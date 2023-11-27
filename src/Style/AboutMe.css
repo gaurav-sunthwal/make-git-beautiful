@@ -59,4 +59,7 @@
   .mainAboutSec{
     flex-wrap: wrap;
   }
+  #aboutMe{
+    font-size: 15px;
+  }
 }
