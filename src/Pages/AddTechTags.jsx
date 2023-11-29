@@ -4,6 +4,7 @@ import { IoIosSearch } from "react-icons/io";
 import tagsPageImg from "../Img/tags.png";
 import "../Style/AddTechTag.css";
 import { useState } from "react";
+import NextBtn from "./NextBtn";
 function AddTechTags() {
   const [searchQuery, setSearchQuery] = useState("");
   const [tags, setTags] = useState([
@@ -68,6 +69,7 @@ function AddTechTags() {
             </div>
           </div>
         </div>
+        <NextBtn link="/socalMedia"/>
       </section>
     </div>
   );

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { IoCaretBackSharp } from "react-icons/io5";
 import "../Style/AboutMe.css";
 import aboutMeImg from "../Img/aboutMe.svg";
+import NextBtn from "./NextBtn";
 function AboutMe() {
   return (
     <div>
@@ -33,11 +34,7 @@ function AboutMe() {
 💬 Ask me about
 ⚡ Fun fact"
             ></textarea>
-            <div className="button">
-              <Link to={"/stats"}>
-                <button className="nextBtn">Next</button>
-              </Link>
-            </div>
+            <NextBtn link="/stats"/>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoCaretBackSharp } from "react-icons/io5";
 import "../Style/Stats.css";
+import NextBtn from "./NextBtn";
 
 function Stats() {
   const [theme, setTheme] = useState("default"); // Default theme value, you can set your preferred default theme here
@@ -90,11 +91,7 @@ function Stats() {
           <img src={img3} alt="" />
           <img src={img4} alt="" />
         </div>
-        <div className="button">
-          <Link to={"/tags"}>
-            <button className="nextBtn">Next</button>
-          </Link>
-        </div>
+        <NextBtn link="/tags"/>
       </section>
     </div>
   );
