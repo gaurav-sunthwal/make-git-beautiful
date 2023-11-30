@@ -4,7 +4,7 @@ import { IoIosSearch } from "react-icons/io";
 import tagsPageImg from "../Img/tags.png";
 import "../Style/AddTechTag.css";
 import { useState } from "react";
-import NextBtn from "./NextBtn";
+import { NextBtn, GoBack} from "./multiUse";
 function AddTechTags() {
   const [searchQuery, setSearchQuery] = useState("");
   const [tags, setTags] = useState([
@@ -31,12 +31,7 @@ function AddTechTags() {
   return (
     <div>
       <section className="tags">
-        <div className="goBack">
-          <Link to={"/stats"}>
-            <IoCaretBackSharp />
-            Go Back
-          </Link>
-        </div>
+        <GoBack link="/stats"/>
         <div className="tital">
           <h1>Add Tech that you use</h1>
           <div className="tagSearch">

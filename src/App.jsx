@@ -8,6 +8,7 @@ import Footer from "./Pages/Footer";
 import Stats from "./Pages/Stats";
 import AddTechTags from "./Pages/AddTechTags";
 import SocalMedia from "./Pages/SocalMedia";
+import DonatePage from "./Pages/DonatePage";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
           <Route path="/socalMedia" element={<SocalMedia />} />
           <Route path="/stats" element={<Stats/>} />
           <Route path="/tags" element={<AddTechTags/>} />
+          <Route path="/donateMe" element={<DonatePage/>} />
         </Routes>
         <Footer/>
       </Router>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { IoCaretBackSharp } from "react-icons/io5";
 import "../Style/Stats.css";
-import NextBtn from "./NextBtn";
+import { NextBtn, GoBack} from "./multiUse";
 
 function Stats() {
   const [theme, setTheme] = useState("default"); // Default theme value, you can set your preferred default theme here
@@ -48,12 +48,7 @@ function Stats() {
   return (
     <div>
       <section className="stats">
-        <div className="goBack">
-          <Link to={"/aboutMe"}>
-            <IoCaretBackSharp />
-            Go Back
-          </Link>
-        </div>
+        <GoBack link="/addTags"/>
         {/* ... rest of your component */}
       <div className="tital">
           <h1>Flex your GitHub Stats</h1>

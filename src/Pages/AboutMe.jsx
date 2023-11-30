@@ -1,18 +1,11 @@
-import { Link } from "react-router-dom";
-import { IoCaretBackSharp } from "react-icons/io5";
 import "../Style/AboutMe.css";
 import aboutMeImg from "../Img/aboutMe.svg";
-import NextBtn from "./NextBtn";
+import { NextBtn, GoBack} from "./multiUse";
 function AboutMe() {
   return (
     <div>
       <section className="aboutSec">
-        <div className="goBack">
-          <Link to={"/"}>
-            <IoCaretBackSharp />
-            Go Back
-          </Link>
-        </div>
+        <GoBack backLink="/"/>
         <div className="tital">
           <h1>Add a small introduction</h1>
         </div>
@@ -34,7 +27,7 @@ function AboutMe() {
 💬 Ask me about
 ⚡ Fun fact"
             ></textarea>
-            <NextBtn link="/stats"/>
+            <NextBtn link="/stats" />
           </div>
         </div>
       </section>

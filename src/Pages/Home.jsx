@@ -23,7 +23,7 @@ function Home() {
                   placeholder="Enter Your GitHub Username"
                   required
                 />
-                
+                 
                 <Link to={"/aboutMe"} className="btn nextBtnpage1" type="submit">
                   <FaArrowRight/>
                 </Link>
