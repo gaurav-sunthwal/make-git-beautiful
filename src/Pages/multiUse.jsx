@@ -11,6 +11,15 @@ function NextBtn(props) {
     </div>
   );
 }
+function Tital(props) {
+  return (
+    <div>
+     <div className="tital">
+          <h1>{props.tital}</h1>
+        </div>
+    </div>
+  );
+}
 
 function GoBack(props) {
   return (
@@ -25,4 +34,4 @@ function GoBack(props) {
   );
 }
 
-export { NextBtn, GoBack };
+export { NextBtn, GoBack , Tital};

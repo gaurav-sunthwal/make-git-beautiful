@@ -1,0 +1,24 @@
+.socalMedia .startInput{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.socalMedia .startInput form{
+    display: flex;
+    margin: 20px 0px;
+}
+.socalMedia form{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formSec{
+    display: flex;
+    width: auto;
+    padding: 20px;
+}
+.socalMedia .startInput form input{
+    /* width: 50%; */
+    width: 100%;
+    margin: 0px 12px;
+}
