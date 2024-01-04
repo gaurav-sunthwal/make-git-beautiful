@@ -11,107 +11,30 @@ function SocalMedia() {
         <div className="socalMedia">
           <div className="startInput">
             <form className="userNameForm">
-              <div className="formSec">
-                <input
-                  className="usernameInput"
-                  type="text"
-                  placeholder="Enter Your GitHub Username"
-                  required
-                />
-
-                <Link
-                  to={"/aboutMe"}
-                  className="btn nextBtnpage1"
-                  type="submit"
-                >
-                  <FaArrowRight />
-                </Link>
-              </div>
-              <div className="formSec">
-                <input
-                  className="usernameInput"
-                  type="text"
-                  placeholder="Enter Your GitHub Username"
-                  required
-                />
-
-                <Link
-                  to={"/aboutMe"}
-                  className="btn nextBtnpage1"
-                  type="submit"
-                >
-                  <FaArrowRight />
-                </Link>
-              </div>
-              <div className="formSec">
-                <input
-                  className="usernameInput"
-                  type="text"
-                  placeholder="Enter Your GitHub Username"
-                  required
-                />
-
-                <Link
-                  to={"/aboutMe"}
-                  className="btn nextBtnpage1"
-                  type="submit"
-                >
-                  <FaArrowRight />
-                </Link>
-              </div>
-              <div className="formSec">
-                <input
-                  className="usernameInput"
-                  type="text"
-                  placeholder="Enter Your GitHub Username"
-                  required
-                />
-
-                <Link
-                  to={"/aboutMe"}
-                  className="btn nextBtnpage1"
-                  type="submit"
-                >
-                  <FaArrowRight />
-                </Link>
-              </div>
-              <div className="formSec">
-                <input
-                  className="usernameInput"
-                  type="text"
-                  placeholder="Enter Your GitHub Username"
-                  required
-                />
-
-                <Link
-                  to={"/aboutMe"}
-                  className="btn nextBtnpage1"
-                  type="submit"
-                >
-                  <FaArrowRight />
-                </Link>
-              </div>
-              <div className="formSec">
-                <input
-                  className="usernameInput"
-                  type="text"
-                  placeholder="Enter Your GitHub Username"
-                  required
-                />
-
-                <Link
-                  to={"/aboutMe"}
-                  className="btn nextBtnpage1"
-                  type="submit"
-                >
-                  <FaArrowRight />
-                </Link>
-              </div>
+              <inputSocalMedia />
+              <inputSocalMedia />
             </form>
           </div>
         </div>
         <NextBtn link="/donateMe" />
       </section>
+    </div>
+  );
+}
+
+function inputSocalMedia() {
+  return (
+    <div className="formSec">
+      <input
+        className="usernameInput"
+        type="text"
+        placeholder="Enter Your GitHub Username"
+        required
+      />
+
+      <Link to={"/aboutMe"} className="btn nextBtnpage1" type="submit">
+        <FaArrowRight />
+      </Link>
     </div>
   );
 }

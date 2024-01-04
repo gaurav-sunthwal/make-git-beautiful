@@ -1,7 +1,10 @@
 import "../Style/AboutMe.css";
 import aboutMeImg from "../Img/aboutMe.svg";
 import { NextBtn, GoBack} from "./multiUse";
-function AboutMe() {
+import { useState } from "react";
+import Result from "./Result";
+function AboutMe(props) {
+  const [aboutMe,setAboutMe] = useState("")
   return (
     <div>
       <section className="aboutSec">
@@ -26,13 +29,21 @@ function AboutMe() {
 🌱 I’m currently learning
 💬 Ask me about
 ⚡ Fun fact"
+            
+            
+            value={aboutMe}
+            onChange={(e)=>setAboutMe(e.target.value)}
+            
+            
             ></textarea>
-            <NextBtn link="/stats" />
+            <NextBtn link="/stats"/>
           </div>
         </div>
       </section>
+      
     </div>
   );
+
 }
 
 export default AboutMe;

@@ -9,6 +9,7 @@ import Stats from "./Pages/Stats";
 import AddTechTags from "./Pages/AddTechTags";
 import SocalMedia from "./Pages/SocalMedia";
 import DonatePage from "./Pages/DonatePage";
+import MainPage from "./Pages/MainPage";
 
 function App() {
   // const [count, setCount] = useState(0)
