@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const SocalMedia = () => {
   const [details, setDetails] = useState([]);
   const [inputValue, setInputValue] = useState('');
@@ -24,6 +23,8 @@ const SocalMedia = () => {
         onChange={handleInputChange}
         placeholder="Enter details"
       />
+
+
       <button onClick={handleAddDetails}>Add Details</button>
 
       <div>
@@ -34,6 +35,8 @@ const SocalMedia = () => {
           ))}
         </ul>
       </div>
+
+
     </div>
   );
 };

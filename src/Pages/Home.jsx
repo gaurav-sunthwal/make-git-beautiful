@@ -13,8 +13,6 @@ function Home() {
   // const history = useHistory();
 
   const [userName, setUserName] = useState("");
-  const [displayHome, setdisplayHome] = useState(true);
-  const [componet, setComponet] = useState("Home");
 
   function handalChange(e) {
     setUserName(e.target.value);
@@ -27,7 +25,6 @@ function Home() {
     
     <div>
       <section 
-        style={{display : displayHome ? "block" : "none"}}
         className="startSec"
       >
         <div className="mainSec">
@@ -42,7 +39,7 @@ function Home() {
                   required
                 />
                 <button
-                  onClick={()=>handalClick("AboutMe")}
+                  onClick={handalClick}
                   className="btn"
                 >
                   <FaArrowRight />
@@ -61,8 +58,7 @@ function Home() {
         </div>
         
       </section>
-      {componet === "AboutMe" && <AboutMe handalClick = {()=>handalClick("Home")}/>}
-      {componet === "" && <NotFound/>}
+
     </div>
   );
 }
